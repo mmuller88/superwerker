@@ -1,3 +1,2 @@
 boto3
--e git+https://github.com/superwerker/awsapilib.git@fix-login-flow#egg=awsapilib
 retrying
