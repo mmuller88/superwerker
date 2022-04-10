@@ -42,7 +42,7 @@ Resources:
 
         # load awsapilib in-process as long as we have no strategy for bundling assets
         sys.path.insert(1, '/tmp/packages')
-        subprocess.check_call([sys.executable, "-m", "pip", "install", '--target', '/tmp/packages', 'awsapilib==0.5.2'])
+        subprocess.check_call([sys.executable, "-m", "pip", "install", "--src", "/tmp", '--target', '/tmp/packages', '-e', 'git+https://github.com/superwerker/awsapilib.git@2282e81376dc225ba2b7c408be119a3adcee7dba#egg=awsapilib'])
         import awsapilib
         from awsapilib import ControlTower
 
